@@ -21,12 +21,14 @@ Note:
 * Show on Blue Ocean. 
 * Source: Jenkinsfiles/1-HelloWorld
 
----?code=Jenkinsfiles/2-ParallelStages&lang=groovy
+---?code=Jenkinsfiles/2-ParallelStages-ShortExample&lang=groovy
+@[5-18]
 
 Note:
 Source: Jenkinsfiles/2-ParallelStages
 
----?code=Jenkinsfiles/3-Multibranch&lang=groovy
+---?code=Jenkinsfiles/3-Multibranch-ShortExample&lang=groovy
+@[10-12]
 
 Note:
 * Source: Jenkinsfiles/3-Multibranch

@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            parallel {
+                stage('Build Windows') {
+                    agent { label 'windows' }
+                    steps {
+                        powershell 'echo "Building on Windows"'
+                    }
+                }
+                stage('Build iOS') {
+                    agent { label 'mac' }
+                    steps {
+                        sh 'echo "Building on iOS"'
+                    }
+                }
+            }
+        }
+    }
+}
