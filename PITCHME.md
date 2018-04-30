@@ -10,15 +10,20 @@
 * Groovy DSL
 * Source controlled build config
 
----?code=Jenkinsfiles/1-HelloWorld&lang=groovy&title=Hello World
-@[2](Specify where your builds will be run)
+---?code=Jenkinsfiles/1-HelloWorld&lang=groovy
+@[2]
 @[3-4]
-@[5-7]
+@[5-8]
 
 Note:
 Show on Jenkins. Show on Blue Ocean. Source: Jenkinsfiles/1-HelloWorld
 
+---?code=Jenkinsfiles/2-ParallelStages&lang=groovy
+
+---?code=Jenkinsfiles/3-Multibranch&lang=groovy
+
 ---
+
 ### Random notes
 * Parallel
 * Blue Ocean
@@ -33,6 +38,9 @@ Show on Jenkins. Show on Blue Ocean. Source: Jenkinsfiles/1-HelloWorld
 * Easily keep changes in sync across branches
 * Avoid duplication of jobs
 * Easy to view history, diff, blame
+* Durable
+* Easy credential management
+* Execute Groovy code within build
 
 ---
 

@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            when {
+                environment name: 'BRANCH_NAME', value: 'master'
+            }
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
