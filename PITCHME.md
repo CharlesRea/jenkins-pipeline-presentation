@@ -1,14 +1,14 @@
 # Jenkins Pipeline
 
-## Or why your CI should be in code
+### Or why your CI should be in code
 
 ---
 
-### What is Pipeline?
+### Pipeline?
 
 * Configure your Jenkins builds using code
 * Groovy DSL
-* Source controlled build config
+* Build config in source control
 
 ---?code=Jenkinsfiles/1-HelloWorld&lang=groovy
 @[2]
@@ -16,44 +16,70 @@
 @[5-8]
 
 Note:
-Show on Jenkins. Show on Blue Ocean. Source: Jenkinsfiles/1-HelloWorld
+* Declarative v Scripted.
+* Show on Jenkins. 
+* Show on Blue Ocean. 
+* Source: Jenkinsfiles/1-HelloWorld
 
 ---?code=Jenkinsfiles/2-ParallelStages&lang=groovy
+@[4-16]
+
+Note:
+Source: Jenkinsfiles/2-ParallelStages
 
 ---?code=Jenkinsfiles/3-Multibranch&lang=groovy
 
----
-
-### Random notes
-* Parallel
-* Blue Ocean
-* Declarative vs scripted
-* Multibranch
+Note:
+* Source: Jenkinsfiles/3-Multibranch
+* Show ECP builds.
 
 ---
 
-## Why use it
+### The good parts - CI as code
 
-* Code reviews of changes
-* Easily keep changes in sync across branches
-* Avoid duplication of jobs
+* Put build changes through code review
+* Easily propogate changes to all branches
+* Single source of truth - no manually duplicating jobs per environment
 * Easy to view history, diff, blame
-* Durable
-* Easy credential management
-* Execute Groovy code within build
 
 ---
 
-## Reasons not to use it
+### More good parts - Pipeline
+* Use all your favourite Jenkins plugins (well, most of them)
+* Execute Groovy code within build - programatically alter your build across environments
+* Easy credential management
+* Durable
+* Blue Ocean
 
+---
+
+### The bad parts
+
+* Learning curve
 * Longer to get jobs set up
 * Documentation isn't great
-* Plugin support is usually good, but often not perfect
+* Plugin support often not perfect
+
+Note:
+Requires trial and error to get started.
 
 ---
 
-## Others
+### Others
 * Teamcity - Kotlin DSL
 * Gitlab - YAML DSL
 * Travis CI
-* Pretty much everything
+* Pretty much all CI solutions
+
+Note:
+* YAML is easier to get up and running, but offers less flexibility.
+
+---
+
+### Should you use it?
+
+Note:
+* On any decent sized project, yes. Benefits of keeping build maintainable outweigh initial setup cost.
+* We've been using it on Sanctuary and gone from 12 environments with 3-5 builds down to a single pipeline.
+* Setup cost will only decrease as you get used to it.
+* On smaller projects, you may be able to get away with manual config. But more lightweight CI solutions would be worth considering.
