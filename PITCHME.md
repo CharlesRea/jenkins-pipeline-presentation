@@ -1,6 +1,6 @@
 # Jenkins Pipeline
 
-### Or why your CI should be in code
+#### Or, why your CI should be in code
 
 ---
 
@@ -29,6 +29,7 @@ Source: Jenkinsfiles/2-ParallelStages
 
 ---?code=Jenkinsfiles/3-Multibranch-ShortExample&lang=groovy
 @[10-12]
+@[9-16]
 
 Note:
 * Source: Jenkinsfiles/3-Multibranch
@@ -40,14 +41,14 @@ Note:
 
 * Put build changes through code review
 * Easily propogate changes to all branches
-* Single source of truth - no manually duplicating jobs per environment
+* No manually duplicating jobs per environment
 * Easy to view history, diff, blame
 
 ---
 
 ### More good parts - Pipeline
-* Use all your favourite Jenkins plugins (well, most of them)
-* Execute Groovy code within build - programatically alter your build across environments
+* Use all your favourite Jenkins plugins
+* Execute Groovy code within build
 * Easy credential management
 * Durable
 * Blue Ocean
@@ -66,7 +67,7 @@ Requires trial and error to get started.
 
 ---
 
-### Others
+### Alternatives?
 * Teamcity - Kotlin DSL
 * Gitlab - YAML DSL
 * Travis CI
@@ -84,3 +85,7 @@ Note:
 * We've been using it on Sanctuary and gone from 12 environments with 3-5 builds down to a single pipeline.
 * Setup cost will only decrease as you get used to it.
 * On smaller projects, you may be able to get away with manual config. But more lightweight CI solutions would be worth considering.
+
+---
+
+### Questions?
