@@ -22,7 +22,6 @@ Note:
 * Source: Jenkinsfiles/1-HelloWorld
 
 ---?code=Jenkinsfiles/2-ParallelStages&lang=groovy
-@[4-16]
 
 Note:
 Source: Jenkinsfiles/2-ParallelStages
