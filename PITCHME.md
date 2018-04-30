@@ -1,3 +1,5 @@
+---?image=assets/pipeline.jpg
+
 # Jenkins Pipeline
 
 #### Or, why your CI should be in code
@@ -22,6 +24,7 @@ Note:
 * Source: Jenkinsfiles/1-HelloWorld
 
 ---?code=Jenkinsfiles/2-ParallelStages-ShortExample&lang=groovy
+@[5]
 @[5-18]
 
 Note:
